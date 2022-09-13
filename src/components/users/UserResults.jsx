@@ -1,9 +1,12 @@
+// 11. Remove useState
 import { useContext } from 'react'
 import Spinner from '../layout/Spinner'
 import UserItem from '../users/UserItem'
+// 12. Import GithubContext
 import GithubContext from '../../context/github/GithubContext'
 
 function UserResults() {
+  // 13. Pull out the context we want from the GithubContext
   const { users, loading } = useContext(GithubContext)
 
   if (!loading) {
